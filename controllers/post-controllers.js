@@ -8,12 +8,12 @@ export default class PostController {
             try {
                 const task = new Task(title, completed);
                 task.save();
-                res.redirect("/");
+                res.json(task.id);
             } catch (e) {
-                res.status(400).send(`<h1>${e.message}</h1>`);
+                res.status(400).json(`${e.message}`);
             }
         } else {
-            res.status(400).send(`<h1>enter a title</h1>`);
+            res.status(400).json(`enter a title`);
         }
     }
     static toggleTask(req, res) {

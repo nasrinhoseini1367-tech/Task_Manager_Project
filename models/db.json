@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "id": 1,
+        "title": "Learn php",
+        "completed": true
+    },
+    {
+        "id": 2,
+        "title": "Learn http",
+        "completed": true
+    },
+    {
+        "id": 3,
+        "title": "Learn python",
+        "completed": true
+    }
+]
